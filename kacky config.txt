@@ -104,7 +104,6 @@
   environment.systemPackages = with pkgs; [
     nerd-fonts.iosevka
     neovim
-    ranger
     (builtins.getFlake "github:areofyl/fetch").packages.${pkgs.system}.default
     cmatrix
     peaclock
@@ -117,8 +116,10 @@
     curl
     btop
     obs-studio
-    (builtins.getFlake "github:oxcl/nix-flake-helium-browser").packages.${pkgs.system}.default
+    librewolf
     vlc
+    spotify
+    krita
     rofi
     kdePackages.kdenlive
   ];
@@ -128,4 +129,3 @@
 
   system.stateVersion = "26.05";
 }
-
