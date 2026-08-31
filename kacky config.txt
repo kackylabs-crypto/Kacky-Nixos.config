@@ -99,13 +99,15 @@
       kdePackages.kate
     ];
   };
-
+  #---RGB----
+services.hardware.openrgb.enable = true;
   # --- SYSTEM PACKAGES ---
   environment.systemPackages = with pkgs; [
     nerd-fonts.iosevka
     neovim
     (builtins.getFlake "github:areofyl/fetch").packages.${pkgs.system}.default
     cmatrix
+    openrgb
     peaclock
     figlet
     cava
