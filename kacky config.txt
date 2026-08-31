@@ -121,6 +121,7 @@
     spotify
     krita
     rofi
+    vscodium
     kdePackages.kdenlive
   ];
 
