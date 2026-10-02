@@ -101,7 +101,6 @@
   };
   #----- RGB ------
     services.hardware.openrgb.enable = true;
-
   # --- SYSTEM PACKAGES ---
   environment.systemPackages = with pkgs; [
     nerd-fonts.iosevka
@@ -121,8 +120,13 @@
     btop
     obs-studio
     vlc
+  #--AI--
+    lmstudio
+    uv
+    python3
+  #------
     spotify
-    proton-vpn
+    proton-vpn-cli
     krita
     rofi
     vscodium
@@ -134,3 +138,4 @@
 
   system.stateVersion = "26.05";
 }
+
